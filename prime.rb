@@ -9,5 +9,5 @@ def prime?(x)
     end
   end
 
-  puts answer
+  answer
 end
