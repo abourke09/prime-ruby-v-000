@@ -3,9 +3,13 @@ def prime?(x)
   range = (2..(x-1)).to_a
   answer = true
 
-  range.each do |y|
-    if x % y == 0
-      answer = false
+  if x < 0
+    answer = false
+  else
+    range.each do |y|
+      if x % y == 0
+        answer = false
+      end
     end
   end
 
